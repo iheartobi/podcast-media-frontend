@@ -30,18 +30,6 @@ const styles = {
   }
 };
 
-// likedPost = () =>{
-
-//   if(this.props.user.likes && this.props.user.likes.find(like => like.post.id === this.props.post.id))
-//   return true;
-//   else return false;
-// }
-// likePost = () => {
-//   this.props.likePost(this.props.post.id)
-// }
-// unLikePost = () => {
-//   this.props.unLikePost(this.props.post.id)
-// }
 
 export class PostCard extends Component {
  
