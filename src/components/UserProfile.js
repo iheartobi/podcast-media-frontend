@@ -9,7 +9,7 @@ const styles = {
     paper:{
         padding: 20,
         maxWidth: 300,
-        marginLeft: 270
+        marginLeft: 170
     },
     profile: {
         '& .image-wrapper': {
@@ -122,17 +122,17 @@ class UserProfile extends React.Component{
         <div className="nav-bar">
           <NavBar />
         </div>
-        <Grid container spacing={16}>
-          <Grid item sm={8} xs={12}>
+        <Grid className="gridprofile" container spacing={16}>
+          <Grid className="profile" item sm={8} xs={12}>
             <br></br>
             <br></br>
             <span>
-              <h2>My Podcasts..</h2>{" "}
+              <h2>My Profile..</h2>{" "}
             </span>
-            <UserCard user={this.state.user} />
+            <UserCard className="profile" user={this.state.user.user} />
             
           </Grid>
-          <Grid style={{ marginTop: 100 }} item sm={4} xs={12}>
+          <Grid className="profile" style={{ marginTop: 100 }} item sm={4} xs={12}>
           {myPods}
           </Grid>
         </Grid>

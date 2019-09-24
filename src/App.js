@@ -10,35 +10,28 @@ import EditUser from "./components/EditUser";
 import UserContainer from "./containers/UserContainer";
 import UserCard from "./components/UserCard";
 import Landing from "./pages/landing";
-import jwtDecode from "jwt-decode";
-import ls from "local-storage";
+import Search from './components/Search'
+
+
 
 export class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      users: [],
-      user: {},
+    
       podcasts: [],
       podcast: {},
       myPodcasts: [],
-      clicked: false
+      clicked: false, 
+      userInput: ''
     };
   }
 
   abortController = new AbortController();
+  
 
   componentDidMount() {
-    fetch("http://localhost:3000/users", {
-      signal: this.abortController.signal
-    })
-      .then(res => res.json())
-      .then(data =>
-        this.setState({
-          users: data
-        })
-      );
-    // .then(data => console.log("Hole", data))
+   
     fetch(
       "http://localhost:3000/podcasts",
       { signal: this.abortController.signal },
@@ -59,11 +52,16 @@ export class App extends React.Component {
           podcasts: podcastData
         });
       });
+      
   }
 
   componentWillUnmount() {
     this.abortController.abort();
   }
+
+  
+
+
 
   addToMyPodcasts = (e, podcast) => {
     if (podcast.myPodcast) {
@@ -87,7 +85,8 @@ export class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <React.Fragment>
+      <head><link href="https://fonts.googleapis.com/css?family=Chivo|Cormorant+Garamond|Fredoka+One|Monoton|Montserrat+Alternates&display=swap" rel="stylesheet"/>></head>
+        
           <Router>
             <Route exact path="/" render={() => <Landing />} />
             <Route exact path="/signUp" component={SignUp} />
@@ -98,7 +97,7 @@ export class App extends React.Component {
                 exact
                 path="/homepage"
                 render={() => (
-                  <Homepage users={this.state.users} user={this.state.user} />
+                  <Homepage  />
                 )}
               />
               <Route
@@ -114,17 +113,22 @@ export class App extends React.Component {
               <Route
                 exact
                 path="/editUser"
-                render={() => <EditUser user={this.state.user} />}
+                render={() => <EditUser  />}
               />
+              {/* <Route
+                render={() => <Search onChange={this.handleChange}  />}
+              /> */}
               <Route
                 exact
                 path="/podcasts"
                 render={() => (
                   <PodcastContainer
+                  
                     podcasts={this.state.podcasts}
                     onClick={this.addToMyPodcasts}
                     user={this.state.user}
                   />
+                  
                 )}
               />
               <Route
@@ -146,7 +150,7 @@ export class App extends React.Component {
               {/* </Layout> */}
             </Switch>
           </Router>
-        </React.Fragment>
+        
       </div>
     );
   }

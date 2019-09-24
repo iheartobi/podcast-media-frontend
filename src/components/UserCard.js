@@ -15,7 +15,8 @@ import CalendarToday from "@material-ui/icons/CalendarToday";
 const styles = {
   paper: {
     padding: 20,
-    maxWidth: 300
+    maxWidth: 300,
+    position: 'relative'
   },
   profile: {
     "& .image-wrapper": {
@@ -56,9 +57,13 @@ const styles = {
 };
 
 class UserCard extends React.Component {
-  state = {
-    img_url: ""
-  };
+  constructor(props){
+    super(props)
+    this.state = {
+      img_url: ""
+    };
+  }
+  
 
   handleImageChange = e => {
     const image = e.target.files[0];
@@ -101,11 +106,16 @@ class UserCard extends React.Component {
   render() {
     dayjs.extend(relativeTime);
     // console.log("UserCard", this.props)
-    console.log("More", this.props);
+    console.log("More", this.props.user);
 
-    const { classes } = this.props;
+     const { classes } = this.props;
 
     return (
+      // <div>
+      //   user
+      // </div>
+       this.props.user ?
+     
       <Paper className={classes.paper}>
         <div className={classes.profile}>
           <div className="image-wrapper">
@@ -181,7 +191,7 @@ class UserCard extends React.Component {
             </center>
           </div>
         </div>
-      </Paper>
+      </Paper> : null
     );
   }
 }

@@ -1,5 +1,44 @@
 .App {
   text-align: center;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQux-ZMa0Wm7XTrcAJmbSa_888OP6zpazaopPpKX0NsAMa5CY8V"); */
+  background-repeat: "no-repeat";
+  background-position: "center";
+  background-size: "cover";
+  /* height: 100vh; */
+  /* opacity: 0.8; */
+ 
+
+}
+.jumbotron {
+  margin: 200;
+  background-image: url("https://jmd.im/wp-content/uploads/2017/06/blackx_thumbnail.jpg");
+  color: rgb(184, 183, 181);
+  width: 2000;
+  font-family: 'Fredoka One', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Chivo', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+  
+  
+}
+
+.gridprofile {
+  margin-right: 500px;
+  float: center;
+  width: 500px;
+}
+
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+  margin-left: -20px;
+}
+
+div {
+  display: block;
+  
 }
 
 html,
@@ -7,6 +46,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    
   /* background-color: rgb(245, 245, 245); */
 }
 
@@ -28,4 +68,16 @@ a, .navbar-brand, .navbar-nav, .nav-link.active {
   .container {
     margin: 80px auto 0 auto;
     max-width: 1200px;
+  }
+  .bg1 {
+    
+        /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43SDBsbQcScrlKU9vwXQMNVZS6vHAQeRoKXxDi4wy4jvUGFNmOA"); */
+        background-repeat: "no-repeat";
+        background-position: "center";
+        background-size: "cover";
+        height: 100vh;
+        
+        /* opacity: 0.8; */
+        
+      
   }

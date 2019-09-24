@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import Search from './Search'
+
 
 
 
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
     <Nav className="ml-auto nav-link">
     <Nav.Item><Link className="nav-link" to="/editUser">Edit Profile</Link></Nav.Item>
     <Nav.Item><Link onClick={this.handleLogout} className="nav-link" to="/">Logout</Link></Nav.Item>
-    <Search/>
+    {/* <Search podcasts={this.props.podcasts} /> */}
     </Nav>
     
   </Navbar>

@@ -29,9 +29,9 @@ const styles = {
     super();
     this.state = {
       username: "",
-      email: "",
       password: "",
       img_url: "",
+      email: "",
       loading: false
     };
 
@@ -75,12 +75,14 @@ const styles = {
     //     "Authorization": `Bearer ${localStorage.getItem("jwt")}`
     //   },
     //   body: JSON.stringify(values)
+      
     // })
     //   .then(res => res.json())
     //     .then(data => { 
     //       if (data.jwt) {
     //         window.history.href=("/profile")
-    //         // console.log(data);
+    //         // console.log(data)
+            
     //       } else {
     //           alert("Could Not Update Please Try Again")
     //           window.history.href=("/editUser")

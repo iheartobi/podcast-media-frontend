@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import PodMic from '../assets/blue_mic.jpg'
+import NewMic from '../assets/Yellow-Podcast-Background.png'
 
 
 
@@ -25,7 +26,7 @@ const styles = {
       position: 'absolute'
     },
     backgroundContainer: {
-      backgroundImage: `url(${PodMic})`,
+      backgroundImage: `url(${NewMic})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",

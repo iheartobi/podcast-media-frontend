@@ -11,6 +11,7 @@ const styles = {
   card: {
     display: "flex",
     marginBottom: 20,
+    marginRight: 20,
     maxWidth: 550,
     minHeight: 250
   },
