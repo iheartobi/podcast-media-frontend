@@ -1,12 +1,8 @@
 .App {
   text-align: center;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQux-ZMa0Wm7XTrcAJmbSa_888OP6zpazaopPpKX0NsAMa5CY8V"); */
   background-repeat: "no-repeat";
   background-position: "center";
   background-size: "cover";
-  /* height: 100vh; */
-  /* opacity: 0.8; */
- 
 
 }
 .jumbotron {
@@ -46,8 +42,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    
-  /* background-color: rgb(245, 245, 245); */
 }
 
 .App-link {
@@ -71,13 +65,9 @@ a, .navbar-brand, .navbar-nav, .nav-link.active {
   }
   .bg1 {
     
-        /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43SDBsbQcScrlKU9vwXQMNVZS6vHAQeRoKXxDi4wy4jvUGFNmOA"); */
         background-repeat: "no-repeat";
         background-position: "center";
         background-size: "cover";
-        height: 100vh;
-        
-        /* opacity: 0.8; */
-        
+        height: 100vh;        
       
   }

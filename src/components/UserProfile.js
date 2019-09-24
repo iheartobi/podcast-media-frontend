@@ -70,39 +70,6 @@ class UserProfile extends React.Component{
       }))
   }
 
-  // handleImageChange = (e) => {
-  //   const image = e.target.files[0];
-  //   const formData = new FormData();
-  //   formData.append('image', image, image.name);
-  //   const values = {
-  //             img_url: this.state.img_url 
-  //   };
-    
-  //   fetch(`http://localhost:3000/users/${localStorage.getItem("userId")}` + formData,{
-  //     method: "PATCH",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "Authorization": `Bearer ${localStorage.getItem("jwt")}`
-  //     },
-  //     body: JSON.stringify(values)
-  //   })
-  //     .then(res => res.json())
-  //       .then(data => { 
-  //         if (data.jwt) {
-  //           window.history.href=("/profile")
-           
-  //         } else {
-  //             alert("Could Not Update Please Try Again")
-  //             window.history.href=("/editUser")
-  //             this.setState({loading: false})
-  //         }
-  //       }).catch(err => {
-  //         this.setState({
-  //           loading: false
-  //         })
-  //     })
-  //}
-
   handleEditPicture = () => {
     const fileInput = document.getElementById('imageInput')
     fileInput.click()

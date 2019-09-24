@@ -67,32 +67,7 @@ const styles = {
     const values = {
       user: { username: this.state.username,  password: this.state.password, img_url: this.state.img_url, email: this.state.email }
     };
-    // // console.log(values);
-    // fetch(`http://localhost:3000/users/${localStorage.getItem("userId")}`,{
-    //   method: "PATCH",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     "Authorization": `Bearer ${localStorage.getItem("jwt")}`
-    //   },
-    //   body: JSON.stringify(values)
-      
-    // })
-    //   .then(res => res.json())
-    //     .then(data => { 
-    //       if (data.jwt) {
-    //         window.history.href=("/profile")
-    //         // console.log(data)
-            
-    //       } else {
-    //           alert("Could Not Update Please Try Again")
-    //           window.history.href=("/editUser")
-    //           this.setState({loading: false})
-    //       }
-    //     }).catch(err => {
-    //       this.setState({
-    //         loading: false
-    //       })
-    //   })
+   
   };
 
   render() {

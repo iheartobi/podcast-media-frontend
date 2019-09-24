@@ -10,7 +10,7 @@ import EditUser from "./components/EditUser";
 import UserContainer from "./containers/UserContainer";
 import UserCard from "./components/UserCard";
 import Landing from "./pages/landing";
-import Search from './components/Search'
+
 
 
 
@@ -60,8 +60,6 @@ export class App extends React.Component {
   }
 
   
-
-
 
   addToMyPodcasts = (e, podcast) => {
     if (podcast.myPodcast) {

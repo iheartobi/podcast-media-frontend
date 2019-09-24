@@ -23,9 +23,7 @@ import PodMic from '../assets/blue_mic.jpg'
 
 const Landing = ()  =>{
   return(
-    // <div style={styles.container}>
    
-    // </div>
     <div style={styles.backgroundContainer}>
       <div>
       <Login/>

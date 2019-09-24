@@ -94,9 +94,7 @@ export class PostCard extends Component {
 
 
     return (
-    //  <div>
-    //    in the meantime
-    //  </div>
+  
        this.props.post ?
       <div>
         <br></br>

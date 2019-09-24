@@ -97,22 +97,6 @@ class homepage extends React.Component {
       });
   }
 
-  // makeNewPost = () =>{
-    
-  // }
-
-  // likePost = (e, like) =>{
-  //   this.setState({like: [like, ...this.state.like]})
-  //   }
-
-  // unLikePost = (e, like) => {
-  //       this.state.likes.filter(plike => plike.id === like.id)
-  //       this.setState({likes: [...this.state.likes]})
-  //     }
-
-  // addPost = (post) => {
-  //   this.setState({posts: [post, ...this.state.posts]})
-  // }
 
   render() {
    

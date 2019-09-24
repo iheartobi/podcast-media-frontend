@@ -64,7 +64,7 @@ const styles = {
     const values = {
       user: { username: this.state.username, email: this.state.email, password: this.state.password }
     };
-    // console.log(values);
+   
     fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {

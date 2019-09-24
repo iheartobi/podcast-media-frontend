@@ -1,21 +1,5 @@
 import ls from 'local-storage'
 
-// export function getUser(){
-    
-//     const jwt = ls.get('jwt')
-   
-//     console.log("Find Me",this.props.user.id)
-//     return fetch(`SHOWUSER/${jwt}`, {
-//         method: "GET", 
-//         headers: {
-//             "Content-Type": "application/json",
-//             "accept": "application/json",
-//             Authorization: `Bearer ${jwt}`
-//         }
-//     })
-//     .then(res => res.json())
-// }
-
 export const getPosts = () => (dispatch) =>{
     dispatch({type: 'LOADING_DATA'});
     return fetch(GETPOSTS)

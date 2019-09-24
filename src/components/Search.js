@@ -9,11 +9,6 @@ export class Search extends Component {
   //   query: '',
   //   results: []
   // }
-  // state = {
-  //   search: '',
-  //   filteredPodcasts: [],
-  // }
-
  
    
   // getInfo = () => {

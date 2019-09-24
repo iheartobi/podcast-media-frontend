@@ -56,29 +56,6 @@ export default (state = initialState, action) => {
           authenticated: false
         }
       }
-    //   case 'LOADING_USER': {
-    //     return { ...state, 
-    //       loading: true
-    //     }
-    //   }  
-    //   case 'LIKE_POST':{
-    //     return {
-    //       ...state, 
-    //       likes: [
-    //         ...state.likes,
-    //         {
-    //           user: state.user.id, 
-    //           post: action.data.post.id
-    //         }
-    //       ]
-    //     }
-    //   }
-    //   case 'UNLIKE_POST': {
-    //     return{
-    //       ...state, 
-    //     likes: state.likes.filter(like => like.id !== action.data.id)
-    //     }  
-    //   }
       default: {
         return state;
       }
